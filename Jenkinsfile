@@ -23,7 +23,10 @@ pipeline {
  
         stage('Compile Sketch') { 
             steps { 
-                bat "\"%ARDUINO_CLI%\" compile --fqbn arduino:avr:uno ." 
+                // Change 'MySketch' to the folder containing your .ino file.
+                dir('MySketch') {
+                    bat "\"%ARDUINO_CLI%\" compile --fqbn arduino:avr:uno ."
+                }
             } 
         } 
  
