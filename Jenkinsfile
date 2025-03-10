@@ -8,7 +8,7 @@ pipeline {
  
     stages { 
         stage('Checkout Code') { 
-            steps {*; 
+            steps { 
                 git branch: 'main', url: 'https://github.com/Soham-1808/IoT-Pipeline-Jenkins.git' 
             } 
         } 
@@ -33,4 +33,4 @@ pipeline {
             } 
         } 
     } 
-} 
+}
