@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        ARDUINO_CLI = "C:/Program Files/Arduino CLI/arduino-cli.exe"
+        ARDUINO_CLI = "C:\\Program Files\\Arduino CLI\\arduino-cli.exe" 
         BOARD_FQBN = "arduino:avr:uno"
         SKETCH_DIR = "C:\\Users\\Jenkins\\workspace\\IoT-Pipeline-Jenkins"  // Adjust the path
     }
